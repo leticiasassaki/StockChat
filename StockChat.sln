@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{3773687C-2AC0-484C-ACDA-AC4067918744}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Service", "2 - Service", "{0C396BF8-0891-46B8-8C58-40C0D598D78A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{583E1492-C8D2-45E5-922D-6CC655239513}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{B9B148F0-08C0-4513-9F40-A01F533D3A3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8D912074-9AB2-4DB0-97F8-E2F789CA62A4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{1E816176-B624-4392-8690-72D34B51A62E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.Tests", "StockChat.Tests\StockChat.Tests.csproj", "{C859B343-F05F-4DC4-9110-CAD4A42554F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.Domain", "StockChat.Domain\StockChat.Domain.csproj", "{DCC02847-7FCC-440D-BD8C-418969CF32EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Consumers", "5 - Consumers", "{5290A9A0-94E5-466C-A740-600191D8000A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.Infrastructure", "StockChat.Infrastructure\StockChat.Infrastructure.csproj", "{A4E4E4E0-9FAD-4FC8-99C6-A18F41BA1842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.Service", "StockChat.Service\StockChat.Service.csproj", "{FCC4813D-0CF6-4D12-9511-06CF4045D091}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.UI", "StockChat.UI\StockChat.UI.csproj", "{C6C31D61-D347-4B16-95AC-A1DCC40B182D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C859B343-F05F-4DC4-9110-CAD4A42554F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C859B343-F05F-4DC4-9110-CAD4A42554F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C859B343-F05F-4DC4-9110-CAD4A42554F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C859B343-F05F-4DC4-9110-CAD4A42554F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC02847-7FCC-440D-BD8C-418969CF32EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC02847-7FCC-440D-BD8C-418969CF32EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC02847-7FCC-440D-BD8C-418969CF32EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC02847-7FCC-440D-BD8C-418969CF32EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E4E4E0-9FAD-4FC8-99C6-A18F41BA1842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E4E4E0-9FAD-4FC8-99C6-A18F41BA1842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E4E4E0-9FAD-4FC8-99C6-A18F41BA1842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E4E4E0-9FAD-4FC8-99C6-A18F41BA1842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC4813D-0CF6-4D12-9511-06CF4045D091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC4813D-0CF6-4D12-9511-06CF4045D091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC4813D-0CF6-4D12-9511-06CF4045D091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC4813D-0CF6-4D12-9511-06CF4045D091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C31D61-D347-4B16-95AC-A1DCC40B182D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C31D61-D347-4B16-95AC-A1DCC40B182D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C31D61-D347-4B16-95AC-A1DCC40B182D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C31D61-D347-4B16-95AC-A1DCC40B182D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C859B343-F05F-4DC4-9110-CAD4A42554F0} = {1E816176-B624-4392-8690-72D34B51A62E}
+		{DCC02847-7FCC-440D-BD8C-418969CF32EB} = {B9B148F0-08C0-4513-9F40-A01F533D3A3B}
+		{A4E4E4E0-9FAD-4FC8-99C6-A18F41BA1842} = {583E1492-C8D2-45E5-922D-6CC655239513}
+		{FCC4813D-0CF6-4D12-9511-06CF4045D091} = {0C396BF8-0891-46B8-8C58-40C0D598D78A}
+		{C6C31D61-D347-4B16-95AC-A1DCC40B182D} = {3773687C-2AC0-484C-ACDA-AC4067918744}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AAFA581-8148-4706-A868-BEF59006D8B9}
+	EndGlobalSection
+EndGlobal
