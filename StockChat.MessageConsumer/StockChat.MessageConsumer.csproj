@@ -4,20 +4,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-StockChat.UI-A7685234-E62B-4C19-A1FA-08B57D456F7C</UserSecretsId>
-    <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
+    <UserSecretsId>6ab63cad-6f23-4795-a558-38222f6517e0</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.5" />
-    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.5" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Identity.Web" Version="1.16.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StockChat.Domain\StockChat.Domain.csproj" />
     <ProjectReference Include="..\StockChat.Infrastructure\StockChat.Infrastructure.csproj" />
   </ItemGroup>
 

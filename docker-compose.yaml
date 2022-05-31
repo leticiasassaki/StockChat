@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: password@123
+    ports:
+      - 1433:1433
+    healthcheck:
+      interval: 30s
+  rabbit_mq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+      RABBITMQ_DEFAULT_VHOST: stockchat
+    ports:
+      - 8080:15672
+      - 5672:5672
+  chat:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    build:
+      context: .
+      dockerfile: ./StockChat.UI/Dockerfile
+    expose:
+      - 80
+      - 443
+      - 8081
+    ports:
+      - 8081:80
+    depends_on:
+      - sqlserver
+      - rabbit_mq
+    command: [
+      "sqlserver:0000",
+      "-t",
+      "120"
+      ]

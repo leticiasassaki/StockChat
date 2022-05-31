@@ -18,17 +18,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{1E816176-B624-4392-8690-72D34B51A62E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.Tests", "StockChat.Tests\StockChat.Tests.csproj", "{C859B343-F05F-4DC4-9110-CAD4A42554F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Tests", "StockChat.Tests\StockChat.Tests.csproj", "{C859B343-F05F-4DC4-9110-CAD4A42554F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.Domain", "StockChat.Domain\StockChat.Domain.csproj", "{DCC02847-7FCC-440D-BD8C-418969CF32EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Domain", "StockChat.Domain\StockChat.Domain.csproj", "{DCC02847-7FCC-440D-BD8C-418969CF32EB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Consumers", "5 - Consumers", "{5290A9A0-94E5-466C-A740-600191D8000A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.Infrastructure", "StockChat.Infrastructure\StockChat.Infrastructure.csproj", "{A4E4E4E0-9FAD-4FC8-99C6-A18F41BA1842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Infrastructure", "StockChat.Infrastructure\StockChat.Infrastructure.csproj", "{A4E4E4E0-9FAD-4FC8-99C6-A18F41BA1842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.Service", "StockChat.Service\StockChat.Service.csproj", "{FCC4813D-0CF6-4D12-9511-06CF4045D091}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.Service", "StockChat.Service\StockChat.Service.csproj", "{FCC4813D-0CF6-4D12-9511-06CF4045D091}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.UI", "StockChat.UI\StockChat.UI.csproj", "{C6C31D61-D347-4B16-95AC-A1DCC40B182D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.UI", "StockChat.UI\StockChat.UI.csproj", "{C6C31D61-D347-4B16-95AC-A1DCC40B182D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockChat.IoC", "StockChat.IoC\StockChat.IoC.csproj", "{C17F6E0B-FC20-437E-A70C-9F7E39D6DD41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.MessageConsumer", "StockChat.MessageConsumer\StockChat.MessageConsumer.csproj", "{7B7FBD86-F2EF-4184-931D-17ED7252E353}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 - External", "7 - External", "{D64F579E-C0B5-492E-A7C7-FFCA9B6D1D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockChat.API", "StockChat.API\StockChat.API.csproj", "{0E19B3C6-D81A-46DA-85B0-B7B2D2CC7046}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +64,18 @@ Global
 		{C6C31D61-D347-4B16-95AC-A1DCC40B182D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6C31D61-D347-4B16-95AC-A1DCC40B182D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6C31D61-D347-4B16-95AC-A1DCC40B182D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17F6E0B-FC20-437E-A70C-9F7E39D6DD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17F6E0B-FC20-437E-A70C-9F7E39D6DD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17F6E0B-FC20-437E-A70C-9F7E39D6DD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17F6E0B-FC20-437E-A70C-9F7E39D6DD41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B7FBD86-F2EF-4184-931D-17ED7252E353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B7FBD86-F2EF-4184-931D-17ED7252E353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B7FBD86-F2EF-4184-931D-17ED7252E353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B7FBD86-F2EF-4184-931D-17ED7252E353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E19B3C6-D81A-46DA-85B0-B7B2D2CC7046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E19B3C6-D81A-46DA-85B0-B7B2D2CC7046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E19B3C6-D81A-46DA-85B0-B7B2D2CC7046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E19B3C6-D81A-46DA-85B0-B7B2D2CC7046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +86,9 @@ Global
 		{A4E4E4E0-9FAD-4FC8-99C6-A18F41BA1842} = {583E1492-C8D2-45E5-922D-6CC655239513}
 		{FCC4813D-0CF6-4D12-9511-06CF4045D091} = {0C396BF8-0891-46B8-8C58-40C0D598D78A}
 		{C6C31D61-D347-4B16-95AC-A1DCC40B182D} = {3773687C-2AC0-484C-ACDA-AC4067918744}
+		{C17F6E0B-FC20-437E-A70C-9F7E39D6DD41} = {583E1492-C8D2-45E5-922D-6CC655239513}
+		{7B7FBD86-F2EF-4184-931D-17ED7252E353} = {5290A9A0-94E5-466C-A740-600191D8000A}
+		{0E19B3C6-D81A-46DA-85B0-B7B2D2CC7046} = {D64F579E-C0B5-492E-A7C7-FFCA9B6D1D75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1AAFA581-8148-4706-A868-BEF59006D8B9}
