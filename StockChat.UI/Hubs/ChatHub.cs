@@ -73,10 +73,9 @@ namespace StockChat.UI.Hubs
         private bool SaveMessage(string content, string user)
         {
             var message = new Message(user, content);
+            var (success, _) = _chatService.EnqueueChatMessageToBeSaved(message);
 
-            var savePostResponse = _chatService.EnqueueChatMessageToBeSaved(message);
-
-            return savePostResponse.success;
+            return success;
         }
     }
 }

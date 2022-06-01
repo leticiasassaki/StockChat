@@ -10,10 +10,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Mappers\" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    <PackageReference Include="TinyCsvParser" Version="2.6.1" />
   </ItemGroup>
 
   <ItemGroup>

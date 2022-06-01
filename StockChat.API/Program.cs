@@ -27,8 +27,8 @@ app.MapGet("/GetStock/{stockCode}/{caller}", async (StockService stockService, s
     var result = await stockService.GetStock(stockCode, caller);
     return result.Close == "N/D" ? Results.BadRequest("Stock not found") : Results.Ok(result);
 })
-
 .WithName("GetStock")
 .Produces(200)
 .Produces(400);
+
 app.Run();

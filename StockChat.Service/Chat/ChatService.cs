@@ -31,12 +31,12 @@ namespace StockChat.Service.Chat
 
             _queue.Enqueue<Message>("SaveChatMessageQueue", message);
 
-            return (true, null);
+            return (true, String.Empty);
         }
 
         public async Task<bool> GetQuotation(string stockCode, string caller)
         {
-            var client = _httpClientFactory.CreateClient("StockGateway");
+            var client = _httpClientFactory.CreateClient("StockAPI");
             var response = await client.GetAsync($"/GetStock/{stockCode}/{caller}");
             return response.IsSuccessStatusCode;
         }

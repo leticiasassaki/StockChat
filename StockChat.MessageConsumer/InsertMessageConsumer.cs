@@ -20,9 +20,9 @@ namespace StockChat.MessageConsumer
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            var connectionString = _configuration["Rabbit:SaveChatMessageQueue:ConnectionString"];
-            var queueName = _configuration["Rabbit:SaveChatMessageQueue:QueueName"];
-            var durable = Convert.ToBoolean(_configuration["Rabbit:SaveChatMessageQueue:Durable"]);
+            var connectionString = _configuration["Rabbit:InsertChatMessageQueue:ConnectionString"];
+            var queueName = _configuration["Rabbit:InsertChatMessageQueue:QueueName"];
+            var durable = Convert.ToBoolean(_configuration["Rabbit:InsertChatMessageQueue:Durable"]);
 
             var factory = new ConnectionFactory()
             {

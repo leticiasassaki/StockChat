@@ -15,10 +15,12 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.Identity.Web" Version="1.16.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\StockChat.Infrastructure\StockChat.Infrastructure.csproj" />
+    <ProjectReference Include="..\StockChat.Service\StockChat.Service.csproj" />
   </ItemGroup>
 
 </Project>
