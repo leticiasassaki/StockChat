@@ -1,20 +1,15 @@
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Identity.Web;
-using Microsoft.AspNetCore.Identity;
 using StockChat.UI.Hubs;
-using StockChat.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using StockChat.IoC.Initializers;
+using StockChat.UI.Consumers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+new InitializeServices(builder.Services).Initialize(builder.Configuration)
+                                   .StartConsumer<StockConsumer>();
 
 builder.Services.AddAuthorization(options =>
 {

@@ -41,3 +41,29 @@ services:
       "-t",
       "120"
       ]
+  stock_api:
+    container_name: stock_api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    build:
+      context: .
+      dockerfile: ./StockChat.API/Dockerfile
+    expose:
+      - 80
+      - 443
+      - 8082
+    ports:
+      - 8082:80
+    depends_on:
+      - sqlserver
+      - rabbit_mq
+  message_insert_consumer:
+    container_name: message_insert_consumer
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    build:
+      context: .
+      dockerfile: ./StockChat.MessageConsumer/Dockerfile
+    depends_on:
+      - sqlserver
+      - rabbit_mq
