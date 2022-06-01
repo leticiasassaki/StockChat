@@ -18,16 +18,16 @@ namespace StockChat.Service.Chat
         public (bool success, string errors) EnqueueChatMessageToBeSaved(Message message)
         {
             if (message == null)
-                return (false, "Post cannot be null");
+                return (false, "Message cannot be null");
 
             if (string.IsNullOrWhiteSpace(message.Owner))
                 return (false, "Owner is required");
 
             if (string.IsNullOrWhiteSpace(message.Content))
-                return (false, "Message cannot be empty");
+                return (false, "Content cannot be empty");
 
             if (message.Content.Length > 1000)
-                return (false, "Post maximum lenght is 1000 chars");
+                return (false, "Message maximum lenght is 1000 chars");
 
             _queue.Enqueue<Message>("SaveChatMessageQueue", message);
 
