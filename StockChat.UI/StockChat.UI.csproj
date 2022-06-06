@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StockChat.Infrastructure\StockChat.Infrastructure.csproj" />
+    <ProjectReference Include="..\StockChat.IoC\StockChat.IoC.csproj" />
     <ProjectReference Include="..\StockChat.Service\StockChat.Service.csproj" />
   </ItemGroup>
 
