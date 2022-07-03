@@ -22,7 +22,7 @@ app.UseHttpsRedirection();
 
 app.UseHttpsRedirection();
 
-app.MapGet("/GetStock/{stockCode}/{caller}", async (StockService stockService, string stockCode, string caller) =>
+app.MapGet("/GetStock/{stockCode}/{caller}", async (IStockService stockService, string stockCode, string caller) =>
 {
     var result = await stockService.GetStock(stockCode, caller);
     return result.Close == "N/D" ? Results.BadRequest("Stock not found") : Results.Ok(result);
